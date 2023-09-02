@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "sunday_cmd",
+  "version": "${version}",
+  "name": "sunday_cmd",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/malken21/SundayCMD"
+  },
+  "license": "MIT",
+  "icon": "assets/sunday_cmd/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "marumasa.sunday_cmd.client.SundayClient"
+    ],
+    "main": [
+      "marumasa.sunday_cmd.Sunday"
+    ]
+  },
+  "mixins": [
+    "sunday_cmd.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
