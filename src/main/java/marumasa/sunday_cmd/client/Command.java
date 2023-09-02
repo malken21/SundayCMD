@@ -19,8 +19,8 @@ public class Command {
     private static int run(CommandContext<FabricClientCommandSource> context) {
         ClientPlayNetworkHandler net = MinecraftClient.getInstance().getNetworkHandler();
         if (net == null) return -1;
-        net.sendCommand("/sun");
-        net.sendCommand("/day");
+        net.sendCommand("sun");
+        net.sendCommand("day");
         return 1;
     }
 }
